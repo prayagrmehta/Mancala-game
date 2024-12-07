@@ -38,3 +38,9 @@ To install GTK+3, run the following commands in the terminal:
 ```bash
 sudo apt update
 sudo apt install libgtk-3-dev
+
+#### **On macOS (using Homebrew):**
+If you have Homebrew installed, you can install GTK+3 with this command:
+
+```bash
+brew install gtk+3
