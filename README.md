@@ -26,16 +26,80 @@ The player with the most seeds in their store at the end of the game is declared
 
 To run this Kalah (Mancala) game on your system, follow these instructions based on your operating system.
 
-### 1. **Prerequisites**
+## On Windows (using mysys2)
 
-You need to have GTK+3 installed to run this game. GTK+ is a library for creating graphical user interfaces.
+### 1. Install MSYS2
+### 2. Install GTK+3
+Open the MSYS2 terminal and run:
+```bash
+pacman -S mingw-w64-x86_64-gtk3
+```
+### 3. Write Your GTK Code
+Save your GTK code in a file, e.g., game.c.
+### 4. Compile the Code
+In the MSYS2 terminal, navigate to the folder containing your game.c file, then compile it:
+```bash
+gcc `pkg-config --cflags gtk+-3.0` -o mancalagame game.c `pkg-config --libs gtk+-3.0`
+```
+pkg-config --cflags gtk+-3.0: Provides necessary compile flags for GTK+3.
+pkg-config --libs gtk+-3.0: Links the GTK+3 library to your program.
+mancalagame: The output executable file.
+### 5. Run the Application
+Run the compiled application using:
+```bash
+./mancalagame
+```
 
-### 2. **Installing GTK+3**
+## On macOS (Using Homebrew)
 
-#### **On Ubuntu/Linux:**
-To install GTK+3, run the following commands in the terminal:
+### 1. Install GTK+3
+Run the following command in the Terminal to install GTK+3 using Homebrew:
+```bash
+brew install gtk+3
+```
+### 2. Write Your GTK Code
+Save your GTK code in a file, e.g., game.c.
+### 3. Compile the Code
+Navigate to the directory where your game.c file is located, then run:
+```bash
+gcc `pkg-config --cflags gtk+-3.0` -o mancalagame game.c `pkg-config --libs gtk+-3.0`
+```
+pkg-config --cflags gtk+-3.0: Provides necessary compile flags for GTK+3.
+pkg-config --libs gtk+-3.0: Links the GTK+3 library to your program.
+mancalagame: The output executable file.
+### 4. Run the Application
+Run the compiled application using:
+```bash
+./mancalagame
+```
 
+## On Linux (Ubuntu/Debian-based)
+### 1. Install GTK+3:
+Open the terminal and run the following commands:
 ```bash
 sudo apt update
 sudo apt install libgtk-3-dev
+```
+### 2. Write your GTK code in a .c file, for example, main.c.
+### 3. Compile the code:
+In the terminal, navigate to the directory where main.c is located. Then compile it using:
+```bash
+gcc `pkg-config --cflags gtk+-3.0` -o mancalagame game.c `pkg-config --libs gtk+-3.0`
+```
+pkg-config --cflags gtk+-3.0: Provides necessary compile flags for GTK+3.
+pkg-config --libs gtk+-3.0: Links the GTK+3 library to your program.
+mancalagame: The output executable file.
+### 4. Run the Application
+Run the compiled application using:
+```bash
+./mancalagame
+```
+
+
+
+
+
+
+
+
 
