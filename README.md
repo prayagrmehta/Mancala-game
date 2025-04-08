@@ -1,5 +1,5 @@
 # Kalah (Mancala) Game
-![Mancala Game](https://www.thesprucecrafts.com/thmb/uzKb_S6_B13oP7llOcBGjvB45nc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-play-mancala-409424_03_2851-e2d5c2ee03ee4500b3db2e47073dcdd8.jpg)
+
 ## Overview
 Kalah, also known as Mancala, is a strategic two-player board game that involves sowing seeds in an attempt to capture more seeds than your opponent. The game is played on a board with two sides, each containing six pits (houses) and a larger pit (store or kalah) at each end.
 
